@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+</head>
+<body>
+
+<table border="5px">
+    <tr>
+        <th>director</th>
+        <th>description</th>
+        <th>peoples</th>
+        <th>release_date</th>
+        <th>rt_score</th>
+        <th>title</th>
+    </tr>
+    {% for row in all_data %}
+    <tr>
+            <td>{{ row.director }}</td>
+            <td>{{ row.description }}</td>
+            <td>{{ row.peoples }}</td>
+            <td>{{ row.release_date }}</td>
+            <td>{{ row.rt_score }}</td>
+            <td>{{ row.title }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
